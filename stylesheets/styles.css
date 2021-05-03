@@ -684,8 +684,4 @@ a.label:focus, a.label:hover {
 #walk{
 	height: 150px;
 	border: 1px solid green;
-	position:absolute;
-    top:50%;
-    left:50%;
-    margin:-225px 0 0 -400px;
 }

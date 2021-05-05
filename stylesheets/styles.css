@@ -682,6 +682,5 @@ a.label:focus, a.label:hover {
 }
 
 #walk{
-	height: 150px;
-	border: 1px solid green;
+	height: 50px;
 }

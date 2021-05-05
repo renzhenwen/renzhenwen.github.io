@@ -684,4 +684,4 @@ a.label:focus, a.label:hover {
 #walk{
 	height: 50px;
 }
-.divcss5{ border:1px solid #F00; width:200px; height:100px}
+.divcss5{ border:1px solid #F00; width:200px; height:100px;margin:0 auto}

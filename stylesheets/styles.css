@@ -660,6 +660,9 @@ a.label:focus, a.label:hover {
 .label-primary-paper{
     background-color:#FF99FF
 }
+.label-primary-code{
+    background-color:#66CCFF
+}
 .highlight{
     	text-shadow: 1px 1px 2px rgb(181, 181, 181);
 	font-size: 1.0em;

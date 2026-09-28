@@ -708,3 +708,68 @@ a.label:focus, a.label:hover {
 	height: 50px;
 }
 .divcss5{width:200px; height:100px;margin:0 auto}
+
+
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 34px 22px;
+  align-items: start;
+  margin-bottom: 34px;
+}
+
+.member-card {
+  min-width: 0;
+  text-align: center;
+}
+
+.member-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 130 / 185;
+  margin: 0 auto 10px;
+  border: 1px solid rgba(0, 0, 0, .09);
+  background: #d9dee4;
+  object-fit: cover;
+  object-position: center top;
+  box-shadow: 0 2px 7px rgba(24, 42, 61, .13);
+}
+
+.member-placeholder {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  border: 0;
+  background: linear-gradient(145deg, #7392b5, #245894);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.member-name {
+  color: #069;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.member-role {
+  margin-top: 2px;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.alumni-grid .member-role {
+  min-height: 3.6em;
+}
+
+.divcss5 {
+  min-height: 0;
+}
+
+

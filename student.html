@@ -169,7 +169,7 @@ function renderMembers(targetId, people) {
   const target = document.getElementById(targetId);
   const fragment = document.createDocumentFragment();
 
-  people.forEach(([name, role, photo, affiliation, showCaption]) => {
+  people.forEach(([name, role, photo, affiliation, showCaption, homepage]) => {
     const card = document.createElement('article');
     card.className = 'member-card';
 

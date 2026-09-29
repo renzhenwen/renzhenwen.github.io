@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Zhenwen Ren (任珍文) | Personal webpage of Zhenwen Ren.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="任珍文, Zhenwen Ren, Ren Zhenwen, 南京理工大学任珍文, 西南科技大学任珍文">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="topnav" id="myTopnav">
+          <a href="http://unix8.net/">Home</a>
+          <a href="http://unix8.net/publication.html">Publications</a>
+          <a class="active" href="./student.html">Group</a>
+          <a href="javascript:void(0);" class="icon" aria-label="Toggle navigation" onclick="toggleNav()">☰</a>
+          <div style="padding-left:16px"></div>
+        </div>
+      </header>
+
+      <section>
+        <div class="profile-intro">
+          <img class="profile-photo" src="assets/headphoto.jpg" alt="Zhenwen Ren">
+          <div id="admysenseHeader">Zhenwen Ren</div>
+          <p><em>
+            Professor, Doctoral Supervisor<br>
+            CAEA Innovation Center of Nuclear Environmental Safety Technology, China, 2025.03-<br>
+            School of Computer Science and Technology, Southwest University of Science and Technology, China, 2025.01-2025.03<br>
+            School of National Defence Science and Technology, Southwest University of Science and Technology, China, 2014.08-2024.12<br>
+            Alibaba Group, China, 2014.06-2024.08<br>
+            <b>Email:</b> rzw@njust.edu.cn
+          </em></p>
+        </div>
+        
+        <h2>Teachers and Ph.D. Candidates</h2>
+        <hr>
+        <div class="members-grid" id="phd-grid"></div>
+        
+        <h2>Master Students</h2>
+        <hr>
+        <div class="members-grid" id="master-grid"></div>
+
+
+
+      </section>
+    </div>
+
+    <div class="divcss5" aria-hidden="true"></div>
+
+    <footer>
+      <p>Project maintained by <a href="http://github.com/orderedlist">Steve Smith</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+
+    <script>
+      function toggleNav() {
+        document.getElementById('myTopnav').classList.toggle('responsive');
+      }
+
+      const masterStudents = [
+        ['Xinyu He', 'Master (2026–)', 'xinyuhe.jpeg', '西南科技大学', false],
+        ['Zhenjiang Hu', 'Master (2026–)', 'zhengjianghu.jpg', '西南科技大学', false],
+        ['Zhishuo Zhang', 'Master (2026–)', 'zhishuozhang.jpg', '西南科技大学', false],
+        ['Yuxiu Gao', 'Master (2026–)', 'yuxiugao.jpg', '西南科技大学', false],
+         ['Haoyu Yao', 'Master (2026–)', 'photo_cxXszp2.jpg', '西南科技大学', false],
+        ['Kaizhuo Zhou', 'Master (2026–)', 'kaizhuozhou.jpg', '西南科技大学', false],
+        ['Kun Zhang', 'Master (2026–)', 'zhangkun.jpg', '西南科技大学', false],
+        ['Pengcheng Luo', 'Master (2026–)', 'luopengcheng.jpg', '西南科技大学', true],
+        ['Chen Che', 'Master (2026–)', 'chechen.jpg', '西南科技大学', false],
+        ['Xiaojian Jiang', 'Master (2026–)', 'jiangxiaojian.jpg', '西南科技大学', false],
+        ['Junfeng Jiang', 'Master (2026–)', 'jiangjunfeng.jpg', '西南科技大学', false],
+        ['Siqi Li', 'Master (2026–)', 'lisiqi.jpg', '西南科技大学', false],
+        ['Anling Liu', 'Master (2026–)', 'liuanning.jpg', '西南科技大学', false],
+        ['Jingyu Qing', 'Master (2026–)', 'qingjingyu.jpg', '西南科技大学', false],
+        ['Jianglin Zhong', 'Master (2026–)', 'zhongjianglin.jpg', '西南科技大学', false],
+        ['Liyao Fang', 'Master (2025–)', 'fangliyao.jpg', '西南科技大学', false],
+        ['Zhaoli He', 'Master (2025–)', 'hezhaoli.jpg', '西南科技大学', false],
+        ['Rongqi Mo', 'Master (2025–)', 'morongqi.jpg', '西南科技大学', false],
+        ['Yajie Yin', 'Master (2025–)', 'yinyajie.jpg', '西南科技大学', false],
+        ['Zhiyuan Huang', 'Master (2025–)', 'huangzhiyuan.jpg', '西南科技大学', false],
+        ['Wenpeng Guo', 'Master (2025–)', 'guowenpeng.jpg', '西南科技大学', false],
+        ['Hao Zhou', 'Master (2025–)', 'zhouhao.jpg', '西南科技大学', false],
+        ['Yongjian Bai', 'Master (2025–)', 'baiyongjian.jpg', '西南科技大学', false],
+        ['Hao Pan', 'Master (2024–)', 'panhao.jpg', '西南科技大学', false],
+        ['Taotao Guo', 'Master (2024–)', 'guotaotao.jpg', '西南科技大学', false],
+        ['Shen Ouyang', 'Master (2024–)', 'ouyangshen.jpg', '西南科技大学', false],
+        ['Qianlong Li', 'Master (2024–)', 'liqianlong.jpg', '西南科技大学', false],
+        ['Zhengjiang Xu', 'Master (2024–)', 'xuzhengjiang.jpg', '西南科技大学', false],
+        ['Kaiwen Sheng', 'Master (2024–)', 'shengkaiwen.jpg', '西南科技大学', false],
+        ['Xiao Guo', 'Master (2024–)', 'guoxiao.jpg', '西南科技大学', false],
+        ['Guangpan Yang', 'Master (2024–)', 'guangpanyang.jpg', '西南科技大学', false],
+        ['Shiyun Lai', 'Master (2023–2026)', 'shiyunlai.jpg', '西南科技大学', true],
+        ['Xinyue Deng', 'Master (2023–2026)', 'xinyuedeng.jpg', '西南科技大学', true],
+        ['Deyin Zhuang', 'Master (2023–2026)', 'deyinzhuang.png', '西南科技大学', true],
+        ['Dongliang Wang', 'Master (2023–2026)', 'dongliangwang.jpg', '西南科技大学', true],
+        ['Honglin Yuan', 'Master (2023–2026)', 'honglinyuan.jpg', '西南科技大学', true],
+        ['Xi Wu', 'Master (2022–2025)', 'wuxi.png', '西南科技大学', true],
+        ['Hong Kang', 'Master (2022–2025)', 'hongkang.png', '西南科技大学', true],
+        ['Shihua Yuan', 'Master (2022–2025)', 'shihuayuan.png', '西南科技大学', true],
+        ['Yanglei Hou', 'Master (2021–2024)', 'yangleihou.png', '西南科技大学', true],
+        ['Xinyue Zhang', 'Master (2021–2024)', 'xinyuezhang.jpg', '西南科技大学', true],
+        ['Ke Ping', 'Master (2021–2024)', 'keping.jpg', '西南科技大学', true],
+        ['Yinsong Liao', 'Master (2020–2023)', 'yinsongliao.jpg', '西南科技大学', true],
+        ['Jiali You', 'Master (2020–2023)', 'jialiyou.jpg', '西南科技大学', true],
+        ['Haoran Li', 'Master (2019–2022)', 'haoranli.jpg', '西南科技大学','false'],
+        ['Yong Mi', 'Master (2019–2022)', 'yongmi.jpg', '西南科技大学', true],
+        ['Xingfeng Li', 'Master (2018–2021)', 'fengfeng.jpg', '西南科技大学', true],
+        ['Yuan Sun', 'Master (2018–2021)', 'yuansun.jpg', '西南科技大学', true]
+      ];
+
+      const phdMembers = [
+        ['Xingfeng Li', 'Associate Professor', 'fengfeng.jpg', '西南科技大学', false],
+        ['Haoran Li', 'Associate Professor', 'haoran.png', '西南科技大学', false],
+        ['Jiao Wang', 'Associate Professor', 'jiaowang.jpg', '西南科技大学', false],
+        ['Yufeng Chen', 'Ph.D. Candidate', 'chenyufeng.jpg', '西南科技大学', false],
+        ['Shuai Zhao', 'Ph.D. Candidate', 'zhaoshuai.jpg', '西南科技大学', false],
+        ['Junyu Chen', 'Ph.D. Candidate', 'chenjunyu.jpg', '西南科技大学', false],
+        ['Jiawei Peng', 'Ph.D. Candidate', 'na.jpg', '西南科技大学', false],
+        ['Yanying Mei', 'Lecturer', 'myy.jpg', '西南科技大学', false],
+        ['Xuemei Han', 'Lecturer', 'xuemeihan.jpg', '西南科技大学', false]
+      ];
+
+      const graduateStudents = [
+        ['袁宏林', '2023级硕士 · 四川大学读博', 'honglinyuan.jpg'],
+        ['庄德银', '2023级硕士 · 电子科技大学读博', 'deyinzhuang.png'],
+        ['伍茜', '2022级硕士 · 电子科技大学读博', 'wuxi.png'],
+        ['康洪', '2022级硕士 · 创景科技，MBSE工程师', 'hongkang.png'],
+        ['袁世华', '2022级硕士 · 问界', 'shihuayuan.png'],
+        ['张芯悦', '2021级硕士 · 四川大学读博', 'xinyuezhang.jpg'],
+        ['张芯悦', '2021级硕士 · 四川大学读博', 'xinyuezhang.jpg'],
+        ['平珂', '2021级硕士 · 芬兰赫尔辛基大学读博', 'keping.jpg'],
+        ['游佳莉', '2020级硕士 · 电子科技大学读博（导师：任福继院士）', 'jialiyou.jpg'],
+        ['廖银松', '2020级硕士 · 绵阳交通发展集团', 'yinsongliao.jpg'],
+        ['糜勇', '2019级硕士 · 西南交通大学读博（导师：陈红梅教授）', 'yongmi.jpg'],
+        ['李浩然', '2019级硕士 · 中山大学读博（导师：郭裕兰教授）', 'haoranli.jpg'],
+        ['孙元', '2018级硕士 · 四川大学读博（导师：彭德中教授）', 'yuansun.jpg'],
+        ['李杏峰', '2018级硕士 · 南京理工大学读博（导师：孙权森教授）', 'fengfeng.jpg'],
+        ['申炜豪', '2020级本科 · 中国科学院'],
+        ['许沛傑', '2020级本科 · 厦门大学'],
+        ['武楚涵', '2020级本科 · 东北大学'],
+        ['肖剑波', '2020级本科 · 电子科技大学'],
+        ['程永航', '2019级本科 · 中国兵器装备集团58所'],
+        ['韩迟玉', '2019级本科 · 合肥工业大学（保送）'],
+        ['薛爽', '2019级本科 · 中国科学院西安光学精密机械研究所（保送）'],
+        ['赫培峥', '2019级本科 · 中国科学院大学'],
+        ['乔国泰', '2019级本科 · 国防科技大学（保送）'],
+        ['舒青山', '2019级本科 · 西南交通大学（保送）'],
+        ['王琦源', '2018级本科 · 电子科技大学读研（保送）'],
+        ['伍淼', '2018级本科 · 西南交通大学读研（保送）'],
+        ['雷皓云', '2017级本科 · 电子科技大学读研（保送）'],
+        ['邓小川', '2017级本科 · 西南科技大学读研'],
+        ['陈俊宇', '2017级本科 · 华侨大学读研'],
+        ['吴明娜', '2016级本科 · 中国科学技术大学读研（保送）'],
+        ['廉雪峰', '2016级本科 · 顺丰研发中心'],
+        ['隆金岑', '2016级本科 · 腾讯'],
+        ['韦子卿', '2015级本科 · 腾讯'],
+        ['李钦源', '2015级本科 · 西南科技大学读研'],
+        ['黄乙轩', '2015级本科 · 上海智桦'],
+        ['李浩然', '2015级本科 · 西南科技大学读研'],
+        ['李凯', '2014级本科 · ASM科技'],
+        ['何伟', '2014级本科 · ASM科技']
+      ];
+
+      
+function renderMembers(targetId, people) {
+  const target = document.getElementById(targetId);
+  const fragment = document.createDocumentFragment();
+
+  people.forEach(([name, role, photo, affiliation, showCaption]) => {
+    const card = document.createElement('article');
+    card.className = 'member-card';
+
+    const photoWrap = document.createElement('div');
+    photoWrap.className = 'member-photo-wrap';
+
+    if (photo) {
+      const image = document.createElement('img');
+      image.className = 'member-photo';
+      image.src = `assets/${photo}`;
+      image.alt = name;
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      photoWrap.appendChild(image);
+    } else {
+      const placeholder = document.createElement('div');
+      placeholder.className = 'member-photo member-placeholder';
+      placeholder.setAttribute('aria-hidden', 'true');
+      placeholder.textContent = name.trim().slice(0, 1);
+      photoWrap.appendChild(placeholder);
+    }
+
+    // 新增：仅当第 5 个字段为 true 时，才显示透明文字框
+    if (affiliation && showCaption) {
+      const caption = document.createElement('div');
+      caption.className = 'member-caption';
+      caption.textContent = affiliation;
+      photoWrap.appendChild(caption);
+    }
+
+    card.appendChild(photoWrap);
+
+    const nameEl = document.createElement('div');
+    nameEl.className = 'member-name';
+    nameEl.textContent = name;
+    card.appendChild(nameEl);
+
+    const roleEl = document.createElement('div');
+    roleEl.className = 'member-role';
+    roleEl.textContent = role;
+    card.appendChild(roleEl);
+
+    fragment.appendChild(card);
+  });
+
+  target.appendChild(fragment);
+}
+
+
+
+
+
+
+      renderMembers('master-grid', masterStudents);
+      renderMembers('phd-grid', phdMembers);
+    </script>
+  </body>
+</html>

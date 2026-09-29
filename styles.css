@@ -340,3 +340,7 @@ footer p + p {
   object-fit: cover;    /* 等比裁剪，保持不变形 */
 }
 
+.member-card > a {
+  display: block;        /* 让链接占满卡片宽度，和原来布局一致 */
+  text-decoration: none;
+}
